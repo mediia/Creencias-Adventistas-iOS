@@ -18,13 +18,13 @@
 		659C1E1117A09A5100EAF6A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659C1E1017A09A5100EAF6A9 /* Default-568h@2x.png */; };
 		659C1E1417A09A5100EAF6A9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659C1E1217A09A5100EAF6A9 /* MainStoryboard_iPhone.storyboard */; };
 		659C1E1717A09A5100EAF6A9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659C1E1517A09A5100EAF6A9 /* MainStoryboard_iPad.storyboard */; };
-		659C1E1A17A09A5100EAF6A9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C1E1917A09A5100EAF6A9 /* MasterViewController.m */; };
 		659C1E1D17A09A5100EAF6A9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C1E1C17A09A5100EAF6A9 /* DetailViewController.m */; };
 		659C1E2517A09A5200EAF6A9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659C1E2417A09A5200EAF6A9 /* SenTestingKit.framework */; };
 		659C1E2617A09A5200EAF6A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659C1DFA17A09A5100EAF6A9 /* UIKit.framework */; };
 		659C1E2717A09A5200EAF6A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659C1DFC17A09A5100EAF6A9 /* Foundation.framework */; };
 		659C1E2F17A09A5200EAF6A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659C1E2D17A09A5200EAF6A9 /* InfoPlist.strings */; };
 		659C1E3217A09A5200EAF6A9 /* Himnario_AdventistaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C1E3117A09A5200EAF6A9 /* Himnario_AdventistaTests.m */; };
+		659C1E6B17A0CCC700EAF6A9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C1E6A17A0CCC700EAF6A9 /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		659C1E1317A09A5100EAF6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		659C1E1617A09A5100EAF6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		659C1E1817A09A5100EAF6A9 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		659C1E1917A09A5100EAF6A9 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		659C1E1B17A09A5100EAF6A9 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		659C1E1C17A09A5100EAF6A9 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		659C1E2317A09A5200EAF6A9 /* Himnario AdventistaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Himnario AdventistaTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +62,7 @@
 		659C1E2E17A09A5200EAF6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		659C1E3017A09A5200EAF6A9 /* Himnario_AdventistaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Himnario_AdventistaTests.h; sourceTree = "<group>"; };
 		659C1E3117A09A5200EAF6A9 /* Himnario_AdventistaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Himnario_AdventistaTests.m; sourceTree = "<group>"; };
+		659C1E6A17A0CCC700EAF6A9 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 				659C1E1217A09A5100EAF6A9 /* MainStoryboard_iPhone.storyboard */,
 				659C1E1517A09A5100EAF6A9 /* MainStoryboard_iPad.storyboard */,
 				659C1E1817A09A5100EAF6A9 /* MasterViewController.h */,
-				659C1E1917A09A5100EAF6A9 /* MasterViewController.m */,
+				659C1E6A17A0CCC700EAF6A9 /* MasterViewController.m */,
 				659C1E1B17A09A5100EAF6A9 /* DetailViewController.h */,
 				659C1E1C17A09A5100EAF6A9 /* DetailViewController.m */,
 				659C1E0117A09A5100EAF6A9 /* Supporting Files */,
@@ -281,8 +281,8 @@
 			files = (
 				659C1E0717A09A5100EAF6A9 /* main.m in Sources */,
 				659C1E0B17A09A5100EAF6A9 /* AppDelegate.m in Sources */,
-				659C1E1A17A09A5100EAF6A9 /* MasterViewController.m in Sources */,
 				659C1E1D17A09A5100EAF6A9 /* DetailViewController.m in Sources */,
+				659C1E6B17A0CCC700EAF6A9 /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +473,7 @@
 				659C1E3717A09A5200EAF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		659C1E3817A09A5200EAF6A9 /* Build configuration list for PBXNativeTarget "Himnario AdventistaTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +482,7 @@
 				659C1E3A17A09A5200EAF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
