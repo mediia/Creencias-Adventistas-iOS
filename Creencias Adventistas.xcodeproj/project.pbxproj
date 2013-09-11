@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65A97C3F17A571D000E0B7C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A97C3E17A571D000E0B7C7 /* UIKit.framework */; };
+		65A97C4117A571D000E0B7C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A97C4017A571D000E0B7C7 /* Foundation.framework */; };
+		65A97C4317A571D000E0B7C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A97C4217A571D000E0B7C7 /* CoreGraphics.framework */; };
+		65A97C4517A571D000E0B7C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A97C4417A571D000E0B7C7 /* CoreData.framework */; };
+		65A97C4B17A571D000E0B7C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65A97C4917A571D000E0B7C7 /* InfoPlist.strings */; };
+		65A97C4D17A571D000E0B7C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A97C4C17A571D000E0B7C7 /* main.m */; };
+		65A97C5117A571D000E0B7C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A97C5017A571D000E0B7C7 /* AppDelegate.m */; };
+		65A97C5317A571D000E0B7C7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A97C5217A571D000E0B7C7 /* Default.png */; };
+		65A97C5517A571D000E0B7C7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A97C5417A571D000E0B7C7 /* Default@2x.png */; };
+		65A97C5717A571D000E0B7C7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A97C5617A571D000E0B7C7 /* Default-568h@2x.png */; };
+		65A97C5A17A571D000E0B7C7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A97C5817A571D000E0B7C7 /* MainStoryboard_iPhone.storyboard */; };
+		65A97C5D17A571D000E0B7C7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A97C5B17A571D000E0B7C7 /* MainStoryboard_iPad.storyboard */; };
+		65A97C6017A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65A97C5E17A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodeld */; };
+		65A97C6317A571D000E0B7C7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A97C6217A571D000E0B7C7 /* MasterViewController.m */; };
+		65A97C6617A571D000E0B7C7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A97C6517A571D000E0B7C7 /* DetailViewController.m */; };
+		65F69BA417A5E6740040BE5D /* ORM.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F69BA317A5E6740040BE5D /* ORM.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65A97C3B17A571D000E0B7C7 /* Creencias Adventistas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Creencias Adventistas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A97C3E17A571D000E0B7C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65A97C4017A571D000E0B7C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65A97C4217A571D000E0B7C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65A97C4417A571D000E0B7C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		65A97C4817A571D000E0B7C7 /* Creencias Adventistas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Creencias Adventistas-Info.plist"; sourceTree = "<group>"; };
+		65A97C4A17A571D000E0B7C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65A97C4C17A571D000E0B7C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65A97C4E17A571D000E0B7C7 /* Creencias Adventistas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Creencias Adventistas-Prefix.pch"; sourceTree = "<group>"; };
+		65A97C4F17A571D000E0B7C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65A97C5017A571D000E0B7C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65A97C5217A571D000E0B7C7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		65A97C5417A571D000E0B7C7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		65A97C5617A571D000E0B7C7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		65A97C5917A571D000E0B7C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		65A97C5C17A571D000E0B7C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		65A97C5F17A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Creencias_Adventistas.xcdatamodel; sourceTree = "<group>"; };
+		65A97C6117A571D000E0B7C7 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		65A97C6217A571D000E0B7C7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		65A97C6417A571D000E0B7C7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		65A97C6517A571D000E0B7C7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		65F69BA217A5E6740040BE5D /* ORM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORM.h; sourceTree = "<group>"; };
+		65F69BA317A5E6740040BE5D /* ORM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORM.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65A97C3817A571D000E0B7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A97C3F17A571D000E0B7C7 /* UIKit.framework in Frameworks */,
+				65A97C4117A571D000E0B7C7 /* Foundation.framework in Frameworks */,
+				65A97C4317A571D000E0B7C7 /* CoreGraphics.framework in Frameworks */,
+				65A97C4517A571D000E0B7C7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65A97C3217A571D000E0B7C7 = {
+			isa = PBXGroup;
+			children = (
+				65A97C4617A571D000E0B7C7 /* Creencias Adventistas */,
+				65A97C3D17A571D000E0B7C7 /* Frameworks */,
+				65A97C3C17A571D000E0B7C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65A97C3C17A571D000E0B7C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65A97C3B17A571D000E0B7C7 /* Creencias Adventistas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65A97C3D17A571D000E0B7C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65A97C3E17A571D000E0B7C7 /* UIKit.framework */,
+				65A97C4017A571D000E0B7C7 /* Foundation.framework */,
+				65A97C4217A571D000E0B7C7 /* CoreGraphics.framework */,
+				65A97C4417A571D000E0B7C7 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65A97C4617A571D000E0B7C7 /* Creencias Adventistas */ = {
+			isa = PBXGroup;
+			children = (
+				65A97C4F17A571D000E0B7C7 /* AppDelegate.h */,
+				65A97C5017A571D000E0B7C7 /* AppDelegate.m */,
+				65A97C5817A571D000E0B7C7 /* MainStoryboard_iPhone.storyboard */,
+				65A97C5B17A571D000E0B7C7 /* MainStoryboard_iPad.storyboard */,
+				65A97C6117A571D000E0B7C7 /* MasterViewController.h */,
+				65A97C6217A571D000E0B7C7 /* MasterViewController.m */,
+				65A97C6417A571D000E0B7C7 /* DetailViewController.h */,
+				65A97C6517A571D000E0B7C7 /* DetailViewController.m */,
+				65A97C5E17A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodeld */,
+				65A97C4717A571D000E0B7C7 /* Supporting Files */,
+				65F69BA217A5E6740040BE5D /* ORM.h */,
+				65F69BA317A5E6740040BE5D /* ORM.m */,
+			);
+			path = "Creencias Adventistas";
+			sourceTree = "<group>";
+		};
+		65A97C4717A571D000E0B7C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65A97C4817A571D000E0B7C7 /* Creencias Adventistas-Info.plist */,
+				65A97C4917A571D000E0B7C7 /* InfoPlist.strings */,
+				65A97C4C17A571D000E0B7C7 /* main.m */,
+				65A97C4E17A571D000E0B7C7 /* Creencias Adventistas-Prefix.pch */,
+				65A97C5217A571D000E0B7C7 /* Default.png */,
+				65A97C5417A571D000E0B7C7 /* Default@2x.png */,
+				65A97C5617A571D000E0B7C7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65A97C3A17A571D000E0B7C7 /* Creencias Adventistas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A97C6917A571D000E0B7C7 /* Build configuration list for PBXNativeTarget "Creencias Adventistas" */;
+			buildPhases = (
+				65A97C3717A571D000E0B7C7 /* Sources */,
+				65A97C3817A571D000E0B7C7 /* Frameworks */,
+				65A97C3917A571D000E0B7C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Creencias Adventistas";
+			productName = "Creencias Adventistas";
+			productReference = 65A97C3B17A571D000E0B7C7 /* Creencias Adventistas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65A97C3317A571D000E0B7C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Daniel Scholtus";
+			};
+			buildConfigurationList = 65A97C3617A571D000E0B7C7 /* Build configuration list for PBXProject "Creencias Adventistas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65A97C3217A571D000E0B7C7;
+			productRefGroup = 65A97C3C17A571D000E0B7C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65A97C3A17A571D000E0B7C7 /* Creencias Adventistas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65A97C3917A571D000E0B7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A97C4B17A571D000E0B7C7 /* InfoPlist.strings in Resources */,
+				65A97C5317A571D000E0B7C7 /* Default.png in Resources */,
+				65A97C5517A571D000E0B7C7 /* Default@2x.png in Resources */,
+				65A97C5717A571D000E0B7C7 /* Default-568h@2x.png in Resources */,
+				65A97C5A17A571D000E0B7C7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				65A97C5D17A571D000E0B7C7 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65A97C3717A571D000E0B7C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A97C4D17A571D000E0B7C7 /* main.m in Sources */,
+				65A97C5117A571D000E0B7C7 /* AppDelegate.m in Sources */,
+				65A97C6017A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodeld in Sources */,
+				65A97C6317A571D000E0B7C7 /* MasterViewController.m in Sources */,
+				65A97C6617A571D000E0B7C7 /* DetailViewController.m in Sources */,
+				65F69BA417A5E6740040BE5D /* ORM.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65A97C4917A571D000E0B7C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A97C4A17A571D000E0B7C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65A97C5817A571D000E0B7C7 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A97C5917A571D000E0B7C7 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		65A97C5B17A571D000E0B7C7 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A97C5C17A571D000E0B7C7 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65A97C6717A571D000E0B7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65A97C6817A571D000E0B7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65A97C6A17A571D000E0B7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Creencias Adventistas/Creencias Adventistas-Prefix.pch";
+				INFOPLIST_FILE = "Creencias Adventistas/Creencias Adventistas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65A97C6B17A571D000E0B7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Creencias Adventistas/Creencias Adventistas-Prefix.pch";
+				INFOPLIST_FILE = "Creencias Adventistas/Creencias Adventistas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65A97C3617A571D000E0B7C7 /* Build configuration list for PBXProject "Creencias Adventistas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A97C6717A571D000E0B7C7 /* Debug */,
+				65A97C6817A571D000E0B7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A97C6917A571D000E0B7C7 /* Build configuration list for PBXNativeTarget "Creencias Adventistas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A97C6A17A571D000E0B7C7 /* Debug */,
+				65A97C6B17A571D000E0B7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65A97C5E17A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65A97C5F17A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodel */,
+			);
+			currentVersion = 65A97C5F17A571D000E0B7C7 /* Creencias_Adventistas.xcdatamodel */;
+			path = Creencias_Adventistas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65A97C3317A571D000E0B7C7 /* Project object */;
+}
