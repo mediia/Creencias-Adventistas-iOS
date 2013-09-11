@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655FD6A817A20A45000FF8A7 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 655FD6A717A20A45000FF8A7 /* Data.m */; };
 		659C1DFB17A09A5100EAF6A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659C1DFA17A09A5100EAF6A9 /* UIKit.framework */; };
 		659C1DFD17A09A5100EAF6A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659C1DFC17A09A5100EAF6A9 /* Foundation.framework */; };
 		659C1DFF17A09A5100EAF6A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659C1DFE17A09A5100EAF6A9 /* CoreGraphics.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655FD6A617A20A45000FF8A7 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		655FD6A717A20A45000FF8A7 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		659C1DF717A09A5100EAF6A9 /* Himnario Adventista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Himnario Adventista.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		659C1DFA17A09A5100EAF6A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		659C1DFC17A09A5100EAF6A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 				659C1E1B17A09A5100EAF6A9 /* DetailViewController.h */,
 				659C1E1C17A09A5100EAF6A9 /* DetailViewController.m */,
 				659C1E0117A09A5100EAF6A9 /* Supporting Files */,
+				655FD6A617A20A45000FF8A7 /* Data.h */,
+				655FD6A717A20A45000FF8A7 /* Data.m */,
 			);
 			path = "Himnario Adventista";
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				659C1E0B17A09A5100EAF6A9 /* AppDelegate.m in Sources */,
 				659C1E1D17A09A5100EAF6A9 /* DetailViewController.m in Sources */,
 				659C1E6B17A0CCC700EAF6A9 /* MasterViewController.m in Sources */,
+				655FD6A817A20A45000FF8A7 /* Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +410,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Himnario Adventista/Himnario Adventista-Prefix.pch";
 				INFOPLIST_FILE = "Himnario Adventista/Himnario Adventista-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,6 +422,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Himnario Adventista/Himnario Adventista-Prefix.pch";
 				INFOPLIST_FILE = "Himnario Adventista/Himnario Adventista-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

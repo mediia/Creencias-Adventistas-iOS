@@ -8,6 +8,8 @@
 
 #import "DetailViewController.h"
 
+#import "Data.h"
+
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
@@ -17,26 +19,16 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+@synthesize dataItem;
+@synthesize detailTitleLabel;
+@synthesize detailContentTextView;
+
+- (void)setDataItem:(NSIndexPath *)newDataItem {
+    if (dataItem != newDataItem) {
+        dataItem = newDataItem;
         
         // Update the view.
         [self configureView];
-    }
-
-    if (self.masterPopoverController != nil) {
-        [self.masterPopoverController dismissPopoverAnimated:YES];
-    }        
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailTitleLabel.title = self.detailItem[0];
-        self.detailDescriptionLabel.text = self.detailItem[1];
     }
 }
 
@@ -47,17 +39,21 @@
     [self configureView];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)configureView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Update the user interface for the detail item.
+    if (dataItem) {
+        Data *lItem = [Data item:dataItem];
+        detailTitleLabel.title = lItem.title;
+        detailContentTextView.text = lItem.content;
+    }
 }
 
 #pragma mark - Split view
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
-    barButtonItem.title = NSLocalizedString(@"Master", @"Master");
+    barButtonItem.title = NSLocalizedString(@"Lista", @"Lista");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }

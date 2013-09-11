@@ -10,15 +10,11 @@
 
 #import "DetailViewController.h"
 
-@interface MasterViewController () {
-    NSMutableArray *_objects;
-    NSArray *_content;
-}
-@end
+#import "Data.h"
 
-@implementation MasterViewController {
-}
+@implementation MasterViewController
 
+// OnResume()
 - (void)awakeFromNib
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -28,88 +24,64 @@
     [super awakeFromNib];
 }
 
+// OnViewCreated()
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // Copy array into objects array...
-    if (!_objects) {
-        
-        _objects = [@[
-                    @"La Palabra de Dios",
-                    @"Dios Padre",
-                    @"La Deidad"] mutableCopy];
-        
-        _content = @[
-                    @"La Palabra de Dios es la posta",
-                    @"Dios Padre es el Rey Soberano",
-                    @"La Deidad son tres en uno"];
-    }
-    
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - Table View
-
+// Le dice a la tabla la cantidad de secciones (opcional)
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    int lSections = [Data sections];
+    return lSections;
 }
 
+// Le dice a la tabla la cantidad de items de la sección del argumento
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    int lItems = [Data itemsInSection:section];
+    return lItems;
 }
 
+// Le da a la tabla el contenido del elemento en la posición solicitada.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    Data *lItem = [Data item:indexPath];
+    cell.textLabel.text = lItem.title;
     return cell;
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
+    NSString *lTitle = [Data titleForSection:section];
+    return lTitle;
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
+// En tablets, simplemente se asocia el nuevo item al controller de detalle que es una propiedad de este controller
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSArray *object = @[_objects[indexPath.row],_content[indexPath.row]];
-        self.detailViewController.detailItem = object;
+        self.detailViewController.dataItem = indexPath;
     }
 }
 
+// En teléfonos, se obtiene el controller de lo que sería el intent
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSArray *object = @[_objects[indexPath.row],_content[indexPath.row]];
-        [[segue destinationViewController] setDetailItem:object];
+        [segue.destinationViewController setDataItem:indexPath];
     }
 }
 
