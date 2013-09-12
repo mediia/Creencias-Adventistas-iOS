@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2524" systemVersion="12A217" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1863"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="448" y="-630"/>
         </scene>
-        <!--class Prefix:identifier Detail View Controller - Detail-->
+        <!--Detail View Controller - Detail-->
         <scene sceneID="16">
             <objects>
                 <viewController storyboardIdentifier="" title="Detail" id="4" customClass="DetailViewController" sceneMemberID="viewController">
@@ -27,26 +27,28 @@
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label translatesAutoresizingMaskIntoConstraints="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="tailTruncation" autoshrinkMode="none" minimumFontSize="10" text="Detail view content goes here" textAlignment="center" id="27">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYe-6e-i2o">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">A continuación presentamos las 28 creencias fundamentales que sostiene la Iglesia Adventista del Séptimo Día, y sus respectivos textos Bíblicos sobre los que se fundamentan las mismas.
+
+Los Adventistas del Séptimo Día aceptan la Biblia como su única regla de fe y apoyo seguro de las creencias fundamentales siendo éstas enseñanzas de las Santas Escrituras. Estas creencia, como se recogen más adelante, constituyen la comprensión de la enseñanza de la Escritura. La revisión de estas declaraciones pueden ser hechas en el Congreso Mundial de la Asociación General de la Iglesia Adventista del Séptimo Día, cada cinco años, cuando la Iglesia es dirigida por el Espíritu Santo a una comprensión más completa de la verdad bíblica o si encuentra una mejor forma de expresar las enseñanzas de la Santa Palabra de Dios.
+
+http://adventista.es/creeemos/nuestras-creencias/</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="27" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CON-Cb-dBe"/>
-                            <constraint firstItem="27" firstAttribute="leading" secondItem="26" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LAk-gc-aCl"/>
-                            <constraint firstItem="27" firstAttribute="centerY" secondItem="26" secondAttribute="centerY" type="default" id="fbb-bQ-YI1"/>
+                            <constraint firstItem="iYe-6e-i2o" firstAttribute="top" secondItem="26" secondAttribute="top" type="default" id="3qV-W0-b46"/>
+                            <constraint firstItem="iYe-6e-i2o" firstAttribute="bottom" secondItem="26" secondAttribute="bottom" type="default" id="4Pi-WB-eDN"/>
+                            <constraint firstItem="iYe-6e-i2o" firstAttribute="leading" secondItem="26" secondAttribute="leading" type="default" id="6iA-eL-pEj"/>
+                            <constraint firstItem="iYe-6e-i2o" firstAttribute="trailing" secondItem="26" secondAttribute="trailing" type="default" id="bhB-xK-pWX"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="53"/>
-                    <connections>
-                        <outlet property="detailDescriptionLabel" destination="27" id="29"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="-687" y="-630"/>
         </scene>
-        <!--class Prefix:identifier Master View Controller - Master-->
+        <!--Master View Controller - Master-->
         <scene sceneID="24">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="19" customClass="MasterViewController" sceneMemberID="viewController">
@@ -85,12 +87,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" lineBreakMode="tailTruncation" autoshrinkMode="none" baselineAdjustment="alignBaselines" text="Title" adjustsFontSizeToFit="NO" id="tIi-5l-S0i">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tIi-5l-S0i">
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

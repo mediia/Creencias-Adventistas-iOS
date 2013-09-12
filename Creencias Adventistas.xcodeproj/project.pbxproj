@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654482C917E16CDA00E05CEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 654482CB17E16CDA00E05CEE /* Localizable.strings */; };
 		65A97C3F17A571D000E0B7C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A97C3E17A571D000E0B7C7 /* UIKit.framework */; };
 		65A97C4117A571D000E0B7C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A97C4017A571D000E0B7C7 /* Foundation.framework */; };
 		65A97C4317A571D000E0B7C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A97C4217A571D000E0B7C7 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		654482CA17E16CDA00E05CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		654482CC17E16D7300E05CEE /* es */ = {isa = PBXFileReference; lastKnownFileType = file; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65A97C3B17A571D000E0B7C7 /* Creencias Adventistas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Creencias Adventistas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A97C3E17A571D000E0B7C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65A97C4017A571D000E0B7C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +112,7 @@
 				65A97C4717A571D000E0B7C7 /* Supporting Files */,
 				65F69BA217A5E6740040BE5D /* ORM.h */,
 				65F69BA317A5E6740040BE5D /* ORM.m */,
+				654482CB17E16CDA00E05CEE /* Localizable.strings */,
 			);
 			path = "Creencias Adventistas";
 			sourceTree = "<group>";
@@ -162,6 +166,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 			);
 			mainGroup = 65A97C3217A571D000E0B7C7;
 			productRefGroup = 65A97C3C17A571D000E0B7C7 /* Products */;
@@ -184,6 +189,7 @@
 				65A97C5717A571D000E0B7C7 /* Default-568h@2x.png in Resources */,
 				65A97C5A17A571D000E0B7C7 /* MainStoryboard_iPhone.storyboard in Resources */,
 				65A97C5D17A571D000E0B7C7 /* MainStoryboard_iPad.storyboard in Resources */,
+				654482C917E16CDA00E05CEE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +212,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		654482CB17E16CDA00E05CEE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				654482CA17E16CDA00E05CEE /* en */,
+				654482CC17E16D7300E05CEE /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		65A97C4917A571D000E0B7C7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
